@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# File Upload Component with Custom Hook
 
-First, run the development server:
+This project contains a React component for file uploads with integration to Vercel Blob Storage, including error handling, persistent state management, and API interactions. The logic for handling file uploads has been encapsulated in a custom hook for better modularity and reusability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Upload files to Vercel Blob Storage
+- Persist uploaded files using `localStorage`
+- Display success or error alerts
+- Load and display uploaded files on a separate page
+- Custom hook `useFileUpload` to handle all upload-related logic
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies
 
-## Learn More
+- Next.js
+- React
+- Vercel Blob Storage
+- Tailwind CSS
+- Shadcn/ui
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+ ```sh
+    git clone https://github.com/GerardoTurin/test-hire-digital-nextjs.git
+    ```
+2.Install dependencies:
 
-## Deploy on Vercel
+    ```sh
+        npm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3.Initialize the project:
+    
+    ```sh
+    npm npm run dev
+    ```
+4.Envarioment variables:
+    BLOB_READ_WRITE_TOKEN=your_token
